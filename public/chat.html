@@ -15,15 +15,15 @@
   <body>
     <div class="chat-container">
       <header class="chat-header">
-        <h1> DisKus</h1>
-        <a href="./index.html" id="leave-btn" class="btn">Leave Room</a>
+        <h1><span id="logo">D</span>is<span id="logo">K</span>us</h1>
+        <a href="./index.html" id="leave-btn" class="btn">Leave</a>
       </header>
       <button class="btn" id="vm">View Members</button>
       <main class="chat-main">
         <div class="chat-sidebar">
-          <h3><i class="fas fa-comments"></i> Room Name:</h3>
+          <h3><i class="fas fa-comments"></i> Room Code</h3>
           <h2 id="room-name"></h2>
-          <h3><i class="fas fa-users"></i> Users</h3>
+          <h3><i class="fas fa-users"></i> Room Members</h3>
           <ul id="users"></ul>
           <span class="close">&times;</span>
         </div>
@@ -38,7 +38,7 @@
             required
             autocomplete="off"
           />
-          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+          <button class="btn"><i class="fas fa-paper-plane"></i></button>
         </form>
       </div>
     </div>

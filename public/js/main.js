@@ -38,12 +38,6 @@ chatForm.addEventListener('submit', (e) => {
   // Get message text
   let msg = e.target.elements.msg.value;
 
-  // msg = msg.trim();
-
-  // if (!msg) {
-  //   return false;
-  // }
-
   // Emit message to server
   socket.emit('chatMessage', msg);
 
@@ -83,23 +77,10 @@ function outputUsers(users) {
   });
 }
 
-viewMembers.addEventListener('click', ()=>{
-  if(sidebar.style.display === 'none'){
-    sidebar.style.display = 'block'
-  }else{
-    sidebar.style.display = 'none'
-  }
+viewMembers.addEventListener('click', () => {
+  sidebar.style.display = 'block';
 })
 
-close.addEventListener('click', ()=>{
+close.addEventListener('click', () => {
   sidebar.style.display = 'none'
 })
-
-// //Prompt the user before leave chat room
-// document.getElementById('leave-btn').addEventListener('click', () => {
-//   const leaveRoom = confirm('Are you sure you want to leave the chatroom?');
-//   if (leaveRoom) {
-//     window.location = '../index.html';
-//   } else {
-//   }
-// });
